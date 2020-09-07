@@ -1,0 +1,14 @@
+//EXAMPPLE ON COPY CINSTRUCTER FOR INTILIZING ONE CLASS OBJECT DATA WITH ANOTHER CLASS OBJECT
+public class DEMO11										//MAIN METHOD
+{
+	public static void main(String[]args)
+	{
+		DATE Dob=new DATE(30,"APRIL",1996);				//CRETING AN OBJECT AND ASSIGNING REFERENCE AND INTIALIZING DATA WITH CONSTRUCTER
+		DATE Hob=new DATE(21,"JUNE",2020);
+		String DB=Dob.getDate();
+		String HB=Hob.getDate();
+		EMPLOYE e1=new EMPLOYE(01,"PP","DESIGNER",55555.55,DB,HB);
+		System.out.println("EMPLOYEE DETAILS ARE");
+		e1.getDetails();
+	}
+}
